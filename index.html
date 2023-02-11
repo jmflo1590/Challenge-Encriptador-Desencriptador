@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    
 </head>
 
 
@@ -23,46 +24,69 @@
 
 
     <main>
-        <section><textarea name="" id="" cols="30" rows="10"></textarea>
+        <section class="part-left">
 
+            <textarea id="text-area-left" class="text-area-left" placeholder="Ingrese el texto aquí." onclick="this.placeholder=''"></textarea>
 
+            <div class="aviso">
+                <img src="imagenes/Vector.png" <p>Sólo letras minúsculas y sin acento.</p>
+                
+            </div>
+
+            <div id="buttons" class="botones">
+                <button class="encriptar">Encriptar</button>
+                <button class="desencriptar">Desencriptar</button>
+            </div>
+            
         </section>
-        <button class="btnencriptar">
-            Encriptar
-        </button>
-        <button class="btndesencriptar">
-            Desencriptar    
-        </button>
-        <section>
+        
+        
+        
+        <section class="part-right">
 
+            <textarea readonly="section" class="message"></textarea>
 
+            <div class="resultado">
+                <div class="muneco">
+                    <img src="imagenes/Muñeco.png" alt="Muñeco">
+                </div>
+                <div class="no-message">
+                    <div class="no-encontrado">
+                        <p>Ningún mensaje fue encontrado.</p>
+                    </div>
+                </div>
+                <div class="texto-encriptado">
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                </div>
+            </div>
+            
+            <div>
+                <button class="copiar">Copiar</button>
+            </div>
+            
         </section>
-
-        
-        <section class="derecho"><textarea name="" id="" cols="30" rows="10"></textarea></section>
-        <div class="muneco">
-        <img src="imagenes/Muñeco.png" alt="Muneco">
-        <p class="texto">Ningún mensaje fue encontrado</p>
-        <p class="aviso">Ingresa el texto que desees encriptar o desencriptar</p>
-        <button class="btncopiar">Copiar</button>
-        </div>
-        
     </main>
 
 
 
 
-</body>
 
-<footer>
+
+    <footer>
+        
+        <div class="foot">
     
         <a href="https://www.linkedin.com/in/jonatan-medrano/">
-            <img src="imagenes/linkedin.png" alt="Logo Linkedin"></a>
+            <img class="linkedin" src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="Logo Linkedin"></a>
     
    
-        <a href="https://github.com/jmflo1590"> <img src="imagenes/github.png" alt="Logo Linkedin">
+        <a href="https://github.com/jmflo1590"> <img class="github" src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="Logo Linkedin">
         </a>
+        <p>&copy; JONATAN-MEDRANO</p>
 
-    <p>&copy; JONATAN-MEDRANO</p>
-</footer>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

@@ -1,154 +1,274 @@
-.logo{
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 40px;
-
-position: absolute;
-width: 120px;
-height: 48px;
-left: 40px;
-top: 40px;
+*{
+    font-family: 'Inter';
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 150%;
+	background: #f3f5fc;
 }
 
-.btnencriptar{
-
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 24px;
-gap: 8px;
-
-width: 328px;
-height: 67px;
-
-/* Dark blue/dark-blue-300 */
-background: #0A3871;
-border-radius: 24px;
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
+header{
+	margin-top: 40px;
+	margin-left: 40px;
+	width: 10%;
+	position: absolute;
+	background: #f3f5fc;
 }
 
-.btndesencriptar{
-box-sizing: border-box;
-
-/* Auto layout */
-
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 24px;
-gap: 8px;
-
-width: 328px;
-height: 67px;
-
-/* Light gray */
-
-background: #D8DFE8;
-/* Dark blue/dark-blue-300 */
-
-border: 1px solid #0A3871;
-border-radius: 24px;
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
+main{
+	display: flex;
+	margin-bottom: 50px;
+	margin-left: 80;
 }
 
-.derecho{
-position: absolute;
-width: 400px;
-height: 944px;
-left: 1000px;
-top: 40px;
 
-/* White */
+.part-left{
+	color: #0A3871;
+	text-transform: lowercase;
+	position: absolute;
+	width: 577px;
+	height: 48px;
+	margin-left: 240px;
+	margin-top: 169px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 150%;
+}
 
-background: green;
-/* shadow */
+.text-area-left{
+	border: none;
+	outline: none;
+}
 
-box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-border-radius: 32px;
+::placeholder { color: #0A3871; }
+	.text-area-left:focus {
+		outline: none;
+	}
+
+
+.aviso{
+	margin-top: 150px;
+	width: 229px;
+	height: 25px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	flex-grow: 0;
+	display: flex;
+}
+
+.botones{
+	width: 680px;
+	height: 67px;
+	top: 450px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 24px;
+	position: absolute;
+}
+
+.encriptar{
+	flex-direction: row;
+	width: 328px;
+	height: 67px;
+	background: #0a3871;
+	border-radius: 24px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.desencriptar{
+	flex-direction: row;
+	width: 328px;
+	height: 67px;
+	background: #d8dfe8;
+	border-radius: 24px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.encriptar:hover{
+    transform: scale(1.10);
+    transition: 400ms;
+}
+
+.desencriptar:hover{
+    transform: scale(1.10);
+    transition: 400ms;
+}
+
+.part-right{
+	width: 350px;
+	height: 650px;
+	position: static;
+	margin-top: 40px;
+	margin-left:1000px;
+	border-radius: 32px;
+	position: flex;
+	background: #FFFFFF;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 32px;
+	color: #000000 8%;
+
+}
+
+.resultado {
+    display: block;
+  }
+  
+.message{
+	width: 350px;
+	height: 670px;
+	position: static;
+	background: #ffffff;
+	border-radius: 32px;
+	padding-top: 32px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.imagen-respuesta{
+	width: 336px;
+	height: 304px;
+	top: 150px;
+	left:1010px;
+	position: absolute;
+
 }
 
 .muneco{
-position: absolute;
-width: 336px;
-height: 304px;
-left: 1032px;
-top: 283px;
-
+	width: 336px;
+	height: 304px;
+	top: 150px;
+	left:1010px;
+	position: absolute;
 }
 
-.texto{
-width: 336px;
-height: 58px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 120%;
-/* or 29px */
-
-text-align: center;
-
-/* Gray/gray-500 */
-
-color: #343A40;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
+.no-encontrado{
+	width: 256px;
+	height: 58px;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	color: #343a40;
+	position: absolute;
+	top: 450px;
+	left:1050px;
+	font-family: 'Inter';
+	font-style: normal;
+	line-height: 120%;
+	flex: none;
 }
 
-.aviso{
-width: 336px;
-height: 48px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-/* or 24px */
-
-text-align: center;
-
-/* Gray/gray-400 */
-
-color: #495057;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
+.parrafo{
+	width: 310px;
+	height: 48px;
+	font-size: 16px;
+	text-align: center;
+	position: absolute;
+	top: 520px;
+	left:1032px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	color: #495057;
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 0;
 }
 
-.btncopiar{
-    
+.texto-encriptado{
+	width: 310px;
+	height: 48px;
+	font-size: 16px;
+	text-align: center;
+	position: absolute;
+	top: 520px;
+	left:1032px;
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%;
+	color: #495057;
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 0;
+}
+
+.no-message{
+	height: 122px;
+	left: 1032px;
+	top: 619px;
+}
+
+.no-message p{
+	background: white;
+}
+
+.copiar{
+	display: none;
+	padding: 20px 120px;
+	position: absolute;
+	width: 280px;
+	height: 67px;
+	margin-left: 120px;
+	margin-top: 402;
+	left: 930px;
+	top: 620px;
+	border: 1px solid #0A3871;
+	border-radius: 24px;
+	cursor: pointer;
+	background: normal;
+	font-size: 16px;
+}
+
+.copiar:hover{
+    background: #d8dfe8;
+   transform: scale(1.10);
+   transition: 400ms;
+}
+
+.foot{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
-    margin-top: 100px;
-    width: 328px;
-    height: 67px;
+    align-items: baseline;
+    font-size: 16px;
+  }
 
-}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  
+footer span {
+    font-family: 'Calibri', sans-serif;
+    font-size: 1.3rem;
+  }
+  
+footer span:nth-child(3) {
+    color: #111010;
+  }
+  
+footer span:nth-child(4) {
+    color: #99948e;
+    margin: 0.5rem 0.5rem;
+  }
 
-
+.linkedin {
+    width: 25px;
+    height: 25px;
+    margin-left: 0.7rem;
+    margin-right: 0.4rem;
+  }
+  
+.github {
+    width: 25px;
+    height: 25px;
+  }
