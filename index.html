@@ -24,52 +24,50 @@
 
 
     <main>
-        <section class="part-left">
+        <section class="izquierda">
 
-            <textarea id="text-area-left" class="text-area-left" placeholder="Ingrese el texto aquí." onclick="this.placeholder=''"></textarea>
+            <textarea id="texto-input" class="texto-input" placeholder="Ingrese el texto aquí." onclick="this.placeholder=''"></textarea>
 
-            <div class="aviso">
-                <img src="imagenes/Vector.png" <p>Sólo letras minúsculas y sin acento.</p>
+            <div class="info">
+                <img src="imagenes/Vector.png">
+                <p>Sólo letras minúsculas y sin acento.</p>
                 
             </div>
 
-            <div id="buttons" class="botones">
-                <button class="encriptar">Encriptar</button>
-                <button class="desencriptar">Desencriptar</button>
+            <div id="botons" class="botones">
+                <button id="b-enc" class="b-enc" >Encriptar</button>
+                <button class="b-desenc">Desencriptar</button>
             </div>
             
         </section>
         
         
         
-        <section class="part-right">
+        <section class="derecha">
 
-            <textarea readonly="section" class="message"></textarea>
+            <textarea readonly="section" cols="20" rows="10" class="mensaje"></textarea>
 
-            <div class="resultado">
+            <div id="resultado">
                 <div class="muneco">
                     <img src="imagenes/Muñeco.png" alt="Muñeco">
                 </div>
-                <div class="no-message">
-                    <div class="no-encontrado">
+                <div class="texto">
+                    <div class="mensaje-no-encontrado">
                         <p>Ningún mensaje fue encontrado.</p>
                     </div>
-                </div>
-                <div class="texto-encriptado">
-                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                
+                    <div class="parrafo">
+                        <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                    </div>
                 </div>
             </div>
             
             <div>
-                <button class="copiar">Copiar</button>
+                <button id="copiar" class="copiar">Copiar</button>
             </div>
             
         </section>
     </main>
-
-
-
-
 
 
     <footer>
@@ -77,10 +75,10 @@
         <div class="foot">
     
         <a href="https://www.linkedin.com/in/jonatan-medrano/">
-            <img class="linkedin" src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="Logo Linkedin"></a>
+            <img class="linkedin" src="imagenes/linkedin.png" alt="Logo Linkedin"></a>
     
    
-        <a href="https://github.com/jmflo1590"> <img class="github" src="https://cdn-icons-png.flaticon.com/512/733/733609.png" alt="Logo Linkedin">
+        <a href="https://github.com/jmflo1590"> <img class="github" src="imagenes/github.png" alt="Logo Linkedin">
         </a>
         <p>&copy; JONATAN-MEDRANO</p>
 

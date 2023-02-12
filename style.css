@@ -1,16 +1,17 @@
 *{
-    font-family: 'Inter';
+	font-family: 'Inter';
 	font-weight: 400;
-	font-size: 30px;
+	font-size: 32px;
 	line-height: 150%;
 	background: #f3f5fc;
 }
+
 
 header{
 	margin-top: 40px;
 	margin-left: 40px;
 	width: 10%;
-	position: absolute;
+	position: fixed;
 	background: #f3f5fc;
 }
 
@@ -20,8 +21,7 @@ main{
 	margin-left: 80;
 }
 
-
-.part-left{
+.izquierda{
 	color: #0A3871;
 	text-transform: lowercase;
 	position: absolute;
@@ -36,18 +36,19 @@ main{
 	line-height: 150%;
 }
 
-.text-area-left{
+
+.texto-input{
 	border: none;
 	outline: none;
 }
 
 ::placeholder { color: #0A3871; }
-	.text-area-left:focus {
+	.texto-input:focus {
 		outline: none;
 	}
 
 
-.aviso{
+.info{
 	margin-top: 150px;
 	width: 229px;
 	height: 25px;
@@ -56,6 +57,7 @@ main{
 	font-size: 12px;
 	flex-grow: 0;
 	display: flex;
+
 }
 
 .botones{
@@ -70,8 +72,9 @@ main{
 	position: absolute;
 }
 
-.encriptar{
+.b-enc{
 	flex-direction: row;
+	color: white;
 	width: 328px;
 	height: 67px;
 	background: #0a3871;
@@ -80,8 +83,9 @@ main{
 	cursor: pointer;
 }
 
-.desencriptar{
+.b-desenc{
 	flex-direction: row;
+	
 	width: 328px;
 	height: 67px;
 	background: #d8dfe8;
@@ -90,17 +94,17 @@ main{
 	cursor: pointer;
 }
 
-.encriptar:hover{
+.b-enc:hover{
     transform: scale(1.10);
     transition: 400ms;
 }
 
-.desencriptar:hover{
+.b-desenc:hover{
     transform: scale(1.10);
     transition: 400ms;
 }
 
-.part-right{
+.derecha{
 	width: 350px;
 	height: 650px;
 	position: static;
@@ -115,11 +119,13 @@ main{
 
 }
 
-.resultado {
-    display: block;
-  }
-  
-.message{
+
+#resultado {
+  display: block;
+}
+
+
+.mensaje{
 	width: 350px;
 	height: 670px;
 	position: static;
@@ -130,24 +136,16 @@ main{
 	padding-right: 10px;
 }
 
-.imagen-respuesta{
-	width: 336px;
-	height: 304px;
-	top: 150px;
-	left:1010px;
-	position: absolute;
-
-}
-
 .muneco{
 	width: 336px;
 	height: 304px;
 	top: 150px;
 	left:1010px;
 	position: absolute;
+
 }
 
-.no-encontrado{
+.mensaje-no-encontrado{
 	width: 256px;
 	height: 58px;
 	font-size: 24px;
@@ -162,7 +160,7 @@ main{
 	line-height: 120%;
 	flex: none;
 }
-
+    
 .parrafo{
 	width: 310px;
 	height: 48px;
@@ -182,32 +180,13 @@ main{
 	flex-grow: 0;
 }
 
-.texto-encriptado{
-	width: 310px;
-	height: 48px;
-	font-size: 16px;
-	text-align: center;
-	position: absolute;
-	top: 520px;
-	left:1032px;
-	font-family: 'Inter';
-	font-style: normal;
-	font-weight: 400;
-	line-height: 150%;
-	color: #495057;
-	flex: none;
-	order: 1;
-	align-self: stretch;
-	flex-grow: 0;
-}
-
-.no-message{
+.texto{
 	height: 122px;
 	left: 1032px;
 	top: 619px;
 }
 
-.no-message p{
+.texto p{
 	background: white;
 }
 
@@ -229,46 +208,68 @@ main{
 }
 
 .copiar:hover{
-    background: #d8dfe8;
-   transform: scale(1.10);
-   transition: 400ms;
+ 	background: #d8dfe8;
+    transform: scale(1.10);
+    transition: 400ms;
 }
 
-.foot{
-    display: flex;
-    align-items: baseline;
-    font-size: 16px;
-  }
+
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 16px;
-  }
-  
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 30px 30px;
+}
+
 footer span {
-    font-family: 'Calibri', sans-serif;
-    font-size: 1.3rem;
-  }
-  
+  font-family: 'Calibri', sans-serif;
+  font-size: 1.3rem;
+}
+
+footer p{
+	font-family: 'Inter';
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 150%;
+	background: #f3f5fc;
+}
+
 footer span:nth-child(3) {
-    color: #111010;
-  }
-  
+  color: #111010;
+}
+
 footer span:nth-child(4) {
-    color: #99948e;
-    margin: 0.5rem 0.5rem;
-  }
+  color: #99948e;
+  margin: 0.5rem 0.5rem;
+}
 
 .linkedin {
-    width: 25px;
-    height: 25px;
-    margin-left: 0.7rem;
-    margin-right: 0.4rem;
-  }
-  
+  width: 50px;
+  height: 50px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  padding: 20px;
+}
+
+.linkedin:hover{
+	background: none;
+    transform: scale(1.50);
+    transition: 400ms;
+}
+
 .github {
-    width: 25px;
-    height: 25px;
-  }
+  width: 50px;
+  height: 50px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  padding: 20px;
+}
+
+.github:hover{
+	background: none;
+    transform: scale(1.50);
+    transition: 400ms;
+}
+
+
